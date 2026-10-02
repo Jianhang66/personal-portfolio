@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ken Yu | Personal Portfolio</title>
+  <style>
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f5f7fa;
+      color: #222;
+      line-height: 1.6;
+    }
+
+    nav {
+      position: sticky;
+      top: 0;
+      background: #ffffff;
+      border-bottom: 1px solid #e5e7eb;
+      padding: 14px 8%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 10;
+    }
+
+    nav .name {
+      font-weight: bold;
+      font-size: 1.1rem;
+    }
+
+    nav a {
+      color: #333;
+      text-decoration: none;
+      margin-left: 20px;
+      font-size: 0.95rem;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    header {
+      padding: 90px 8% 70px;
+      background: #ffffff;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      margin: 0 0 12px;
+    }
+
+    header p {
+      max-width: 760px;
+      font-size: 1.15rem;
+      color: #555;
+      margin: 0;
+    }
+
+    main {
+      max-width: 1050px;
+      margin: 0 auto;
+      padding: 45px 24px 70px;
+    }
+
+    section {
+      margin-bottom: 55px;
+    }
+
+    h2 {
+      font-size: 1.8rem;
+      margin-bottom: 22px;
+    }
+
+    .card {
+      background: #ffffff;
+      border: 1px solid #e5e7eb;
+      border-radius: 12px;
+      padding: 24px;
+      box-shadow: 0 4px 14px rgba(0,0,0,0.04);
+    }
+
+    .skills {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 14px;
+    }
+
+    .skill {
+      background: #ffffff;
+      border: 1px solid #e5e7eb;
+      border-radius: 10px;
+      padding: 16px;
+      text-align: center;
+      font-weight: 600;
+    }
+
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 18px;
+    }
+
+    .project h3 {
+      margin-top: 0;
+      margin-bottom: 10px;
+    }
+
+    .project p {
+      color: #555;
+    }
+
+    .project a {
+      color: #0b57d0;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .project a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      padding: 28px;
+      background: #ffffff;
+      border-top: 1px solid #e5e7eb;
+      color: #666;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 650px) {
+      nav {
+        padding: 12px 20px;
+      }
+
+      nav .links {
+        display: none;
+      }
+
+      header {
+        padding: 65px 24px 50px;
+      }
+
+      header h1 {
+        font-size: 2.3rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <nav>
+    <div class="name">Ken Yu</div>
+    <div class="links">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+    </div>
+  </nav>
+
+  <header>
+    <h1>Ken Yu</h1>
+    <p>
+      I am a college student interested in data analysis, technology, and using analytical skills to solve real-world problems.
+    </p>
+  </header>
+
+  <main>
+    <section id="about">
+      <h2>Personal Statement</h2>
+      <div class="card">
+        <p>
+          I am a motivated college student building skills in data analysis, problem solving, and technology while preparing for future professional opportunities.
+        </p>
+      </div>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <div class="skills">
+        <div class="skill">Microsoft Excel</div>
+        <div class="skill">R Programming</div>
+        <div class="skill">Data Analysis</div>
+        <div class="skill">Data Visualization</div>
+        <div class="skill">Problem Solving</div>
+        <div class="skill">Communication</div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="projects">
+
+        <div class="card project">
+          <h3>Data Analysis Project</h3>
+          <p>
+            Analyzed a dataset using R to identify patterns, summarize key findings, and present results in a clear format.
+          </p>
+          <a href="#" onclick="return false;">Project Reference</a>
+        </div>
+
+        <div class="card project">
+          <h3>Excel Analysis Project</h3>
+          <p>
+            Used Microsoft Excel to organize information, apply formulas, create charts, and interpret business-related data.
+          </p>
+          <a href="#" onclick="return false;">Project Reference</a>
+        </div>
+
+        <div class="card project">
+          <h3>Personal Portfolio Website</h3>
+          <p>
+            Designed and published a personal portfolio website using HTML, CSS, GitHub, and GitHub Pages.
+          </p>
+          <a href="#" onclick="return false;">Live Website</a>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    © 2026 Ken Yu · Personal Portfolio
+  </footer>
+</body>
+</html>
